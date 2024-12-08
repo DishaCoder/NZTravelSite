@@ -1,0 +1,305 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Landing Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    /* Reset CSS */
+body, h1, param  {
+  margin: 0; 
+  padding: 0;
+  display:contents;
+  
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Hero Section */
+.hero-section {
+  background-color: #dcc3c3;
+  color: #fff;
+  padding: 50px 20px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.text-content {
+  max-width: 600px;
+}
+
+.text-content h1 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+}
+
+.text-content h1 span {
+  color: #8a19e0; /* Orange highlight */
+}
+
+.text-content p {
+  margin: 20px 0;
+  font-size: 1rem;
+  color: #c7abab;
+}
+
+.btn-primary {
+  background-color: #ff7f50;
+  color: #ede0e0;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.image-content img {
+  width: 400px;
+  height: auto;
+}
+
+/* Search Section */
+.search-section {
+  background-color: #d8adad;
+  padding: 30px 20px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.search-field {
+  flex: 1;
+  margin: 10px;
+}
+
+.search-field label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.search-field input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #b01616;
+  border-radius: 5px;
+}
+
+.search-container .btn-primary {
+  flex: 0 0 auto;
+  margin: 10px;
+  padding: 15px 30px;
+}
+
+</style>
+<body>
+  <header class="hero-section">
+    <div class="container">
+      <div class="text-content">
+        <h1>Get started your exciting <span>journey</span> with us.</h1>
+        <p>
+          A team of experienced tourism professionals will provide you with the
+          advice and tips for your desired place.
+        </p>
+        <button class="btn-primary">Discover Now</button>
+      </div>
+      <div class="image-content">
+        <img src="travel p" alt="Traveler with suitcase">
+      </div>
+    </div>
+  </header>
+  <section class="search-section">
+    <div class="search-container">
+      <div class="search-field">
+        <label for="location">Location</label>
+        <input type="text" id="location" placeholder="Where are you going">
+      </div>
+      <div class="search-field">
+        <label for="date">Date</label>
+        <input aria-selected="undefined" id="date">
+      </div>
+      <div class="search-field">
+        <label for="guest">Guest</label>
+        <input type="number" id="guest" placeholder="Number of guests">
+      </div>
+      <button class="btn-primary">Explore Now</button>
+    </div>
+  </section>
+</body>
+</html> -->
+
+
+<!--  new one -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='VarshilsProject\static\css\home.css') }}">
+</head>
+<body>
+    <div class="homepage">
+        <header>
+          <div class="logo">
+            <img src="{{ url_for('static', filename='VarshilsProject\static\res\logo.jpg') }} alt="Traveler">
+        </div>
+            <div class="logo">TRAVEL NZ</div>
+            <nav>
+                <ul>
+                    <li><a href="./home.html">Home</a></li>
+                    <li><a href="./services.html">Services</a></li>
+                    <li><a href="./contactus.html">About Us</a></li>
+                    <li><a href="./contactus.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="user-icon">
+              <img src="/Users/dishapatel/Documents/Codes/VarshilsProject/res/usericon.jpg" alt="Traveler">
+            </div>
+        </header>
+        <main>
+            <section class="hero">
+                <div class="hero-content">
+                    <h1>
+                        <span class="line1">Get started your</span><br>
+                        <span class="line2">exciting <span class="highlight">journey</span></span><br>
+                        <span class="line3">with us.</span>
+                    </h1>
+                    <p>A Team of experienced tourism 
+                    <br>professionals will provide you with the best 
+                    <br>advice and tips for your desired place.</p>
+                    <button class="discover-btn">Discover Now</button>
+                </div>
+                <div class="hero-image">
+                    <img src="/Users/dishapatel/Documents/Codes/VarshilsProject/res/traveller.jpeg " alt="Traveler" style="
+                          width: 400px;
+                          height: 400px;
+                          border-radius: 50%;
+                      
+                  ">
+                </div>
+                <section class="search-bar">
+                 <div class="search-field">
+                   <label for="location">Location</label>
+                    <select id="location">
+                      <option>Where are you going</option>
+            </section>
+            <!-- <section class="search-bar"> -->
+                <!-- <div class="search-field">
+                    <label for="location">Location</label>
+                    <select id="location">
+                        <option>Where are you going</option> -->
+                    </select>
+                </div>
+                <div class="search-field">
+                    <label for="date">Date</label>
+                    <select id="date">
+                        <option>When will you go</option>
+                    </select>
+                </div>
+                <div class="search-field">
+                    <label for="guest">Guest</label>
+                    <select id="guest">
+                        <option>Number of guests</option>
+                    </select>
+                </div>
+                <button class="explore-btn">Explore Now</button>
+            </section>
+        </main>
+    </div>
+    <section class="destination-section">
+      <div class="section-header">
+          <h2>Discover the Destinations</h2>
+          <a href="#" class="more-link">More</a>
+      </div>
+      <div class="destination-cards">
+          <div class="card">
+              <div class="image-wrapper">
+                  <img src="/Users/dishapatel/Documents/Codes/VarshilsProject/res/auckland.jpg" alt="Auckland">
+                  <button class="favorite-btn">&hearts;</button>
+              </div>
+              <p class="location-name">AUCKLAND</p>
+          </div>
+          <div class="card">
+              <div class="image-wrapper">
+                  <img src="/Users/dishapatel/Documents/Codes/VarshilsProject/res/wellington.jpg" alt="Wellington">
+                  <button class="favorite-btn">&hearts;</button>
+              </div>
+              <p class="location-name">WELLINGTON</p>
+          </div>
+          <div class="card">
+              <div class="image-wrapper">
+                  <img src="/Users/dishapatel/Documents/Codes/VarshilsProject/res/christchurch.jpg" alt="Christchurch">
+                  <button class="favorite-btn">&hearts;</button>
+              </div>
+              <p class="location-name">CHRISTCHURCH</p>
+          </div>
+      </div>
+  </section>
+    <footer>
+      <div class="footer-container">
+          <div class="trabook">
+              <h3>Trabook</h3>
+              <p>Book your trip in minutes, get full control for much longer.</p>
+              <div class="social-icons">
+                  <a href="#"><img src="facebook_logos_PNG19748.png" alt="Facebook"></a>
+                  <a href="#"><img src="instagram_PNG11.png" alt="Instagram"></a>
+                  <a href="#"><img src="twitter.jpeg" alt="Other"></a>
+              </div>
+          </div>
+          <div class="footer-section company">
+              <h3>Company</h3>
+              <ul>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Careers</a></li>
+                  <li><a href="#">Logistics</a></li>
+                  <li><a href="#">Privacy & Policy</a></li>
+              </ul>
+          </div>
+          <div class="footer-section contact">
+              <h3>Contact</h3>
+              <ul>
+                  <li><a href="#">Help/FAQ</a></li>
+                  <li><a href="#">Press</a></li>
+                  <li><a href="#">Affiliates</a></li>
+              </ul>
+          </div>
+          <div class="footer-section more">
+              <h3>More</h3>
+              <ul>
+                  <li><a href="#">Press Centre</a></li>
+                  <li><a href="#">Our Blog</a></li>
+                  <li><a href="#">Low Fare Tips</a></li>
+              </ul>
+          </div>
+      </div>
+      <p>&copy; 2023 Trabook. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
+
+</body>
+</html>
+
+
+
+
+
